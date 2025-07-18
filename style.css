@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Forum";
+    src: url("assets/fonts/Forum-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto-Thin.ttf");
+}
+body {
+    width: 1920px;
+    margin: 0 auto;
+}
 .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -25,5 +37,16 @@
     top: 62px;
     left: 665px;
     gap: 60px;
-    font-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+.nav-list a {
+    color: white;
+}
+#welcome {
+    width: 1920px;
+    height: 810px;
+    background-color: #030303;
+    font-family: 'Forum';
+    color: white;
 }
