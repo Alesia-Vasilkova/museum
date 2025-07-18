@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum</title>
-    <link rel="icon" href="assets/img/Frame.ico">
+    <link rel="icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,59 +42,55 @@
         <section class="section" id="welcome">
             <div class="welcome-container">
                 <div class="welcome-text">
-                    <h1 class="welcome-title">Welcome <br> to the Louvre</h1>
-                    <h3 class="welcome-subtitle">From the castle to the museum</h3>
-                    <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" class="welcome-button"> Discover the Louvre </a>
+                    <h1>Welcome <br> to the Louvre</h1>
+                    <h3>From the castle to the museum</h3>
+                    <button onclick="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" class="welcome-button"> Discover the Louvre </button>
                 </div>
-            </div>
-            <div class="welcome-image">
-                <img src="assets/img/1.jpg" alt="Mona Lisa" id="mona-lisa">
+                <div class="welcome-image">
+                    <img src="assets/img/1.jpg" alt="Mona Lisa"">
+                </div>
             </div>
         </section>
-        <section class="section" id="visiting">
-            <div class="visiting-title">
-                <h2 class="title-container">Virtual tour</h2>
-            </div>
-            <section id="group1">
-                <div class="palace-container">
+        <section class="section visiting" id="visiting">
+            <h2>Virtual tour</h2>
+            <div class="cards-group">
+                <article class="palace-card">
                     <img src="assets/img/Royal palace.jpg" alt="Royal Palace" id="royal-palace">
-                    <h3 class="palace-name">Royal palace</h3>
+                    <h3>Royal palace</h3>
                     <p>360° Virtual Tour</p>
                     <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815" class="palace-link"> Google Street Panorama View </a>
-                </div>
-                <div class="denon-container">
+                </article>
+                <article class="denon-card">
                     <img src="assets/img/Denon wing.jpg" alt="Denon Wing" id="denon-wing">
-                    <h3 class="denon-name">Denon Wing</h3>
+                    <h3>Denon Wing</h3>
                     <p>360° Virtual Tour</p>
                     <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500" class="denon-link"> Google Street Panorama View </a>
-                </div>
-                <div class="colonnade-container">
+                </article>
+                <article class="colonnade-card">
                     <img src="assets/img/Colonnade perrault.jpg" alt="Colonnade Perrault" id="colonnade">
-                    <h3 class="colonnade-name">Colonnade Perrault</h3>
+                    <h3>Colonnade Perrault</h3>
                     <p>360° Virtual Tour</p>
                     <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120" class="colonnade-link"> Google Street Panorama View </a>
-                </div>
-            </section>
-            <section id="group2">
-                <div class="greek-container">
+                </article>
+                <article class="greek-card">
                     <img src="assets/img/Greek hall.jpg" alt="Greek Hall" id="greek-hall">
-                    <h3 class="greek-name">Greek Hall</h3>
+                    <h3>Greek Hall</h3>
                     <p>360° Virtual Tour</p>
                     <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736" class="greek-link"> Google Street Panorama View </a>
-                </div>
-                <div class="mona-container">
-                <img src="assets/img/Mona Lisa.jpg" alt="Mona Lisa" id="mona">
-                <h3 class="mona-name">Mona Lisa</h3>
-                <p>360° Virtual Tour</p>
-                <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120" class="mona-link"> Google Street Panorama View </a>
-                </div>
-                <div class="night-container">
-                <img src="assets/img/Night palace.jpg" alt="Night Palace" id="night">
-                <h3 class="night-name">Night Palace</h3>
-                <p>360° Virtual Tour</p>
-                <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652" class="night-link"> Google Street Panorama View </a>
-                </div>
-            </section>
+                </article>
+                <article class="mona-card">
+                    <img src="assets/img/Mona Lisa.jpg" alt="Mona Lisa" id="mona">
+                    <h3>Mona Lisa</h3>
+                    <p>360° Virtual Tour</p>
+                    <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120" class="mona-link"> Google Street Panorama View </a>
+                </article>
+                <article class="night-card">
+                    <img src="assets/img/Night palace.jpg" alt="Night Palace" id="night">
+                    <h3>Night Palace</h3>
+                    <p>360° Virtual Tour</p>
+                    <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652" class="night-link"> Google Street Panorama View </a>
+                </article>
+            </div>
         </section>
         <section class="section" id="explore">
             <div class="title">
@@ -105,7 +101,6 @@
                 <p> It was cleaned in 1984 to remove a "yellow veil" of dust that had <br> gathered since the previous restoration in the 19th century. </p>
                 <p> The cleaning provoked furious protests, not because the picture had <br> been damaged in any way, but because it looked different. </p>
             </div>
-            <img
         </section>
         <section class="section" id="video">
             <div class="title">
@@ -156,6 +151,18 @@
                     </li>
                 </ul>
             </nav>
+            <div class="footer-media">
+                <a href="https://www.youtube.com/user/louvre" class="socialmedia"><img src="assets/img/Youtube.png" alt="YouTube"></a>
+                <a href="https://www.instagram.com/museelouvre/" class="socialmedia"><img src="assets/img/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/museedulouvre" class="socialmedia"><img src="assets/img/Facebook.png" alt="Facebook"></a>
+                <a href="http://twitter.com/museelouvre" class="socialmedia"><img src="assets/img/Twitter.png" alt="Twitter"></a>
+                <a href="https://www.pinterest.fr/museedulouvre/" class="socialmedia"><img src="assets/img/Pinterest.png" alt="Pinterest"></a>
+            </div>
+        </div>
+        <div class="footer-id">
+            <p> © 2025 </p>
+            <p> The Rolling Scopes School </p>
+            <a href="https://github.com/Alesia-Vasilkova" class="github nav-link"> alesia-vasilkova </a>
         </div>
     </footer>
 </body>

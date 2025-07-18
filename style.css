@@ -6,9 +6,14 @@
     font-family: "Roboto";
     src: url("assets/fonts/Roboto-Thin.ttf");
 }
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
 .header-container {
-    width: 1920px;
-    max-width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 60px;
     display: flex;
@@ -39,6 +44,12 @@
 .nav-link:hover {
     color: #9d8665;
 }
+body {
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+}
 #welcome {
     background-color: #030303;
     font-family: 'Forum', serif;
@@ -53,6 +64,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
+}
+.welcome-image img{
+    background-attachment: fixed;
+    background-size: cover;
 }
 .welcome-text {
     max-width: 650px;
@@ -86,10 +101,6 @@
 .welcome-button:hover {
     background-color: #710707;
 }
-.welcome-image img {
-    width: 400px;
-    height: auto;
-}
 #visiting {
     max-width: 1920px;
     height: 1200px;
@@ -116,15 +127,16 @@
     justify-content: center;
     justify-content: space-between;
 }
-.footer-container {
+.footer {
     width: 1920px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 60px;
+    background-color: #030303;
+}
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #030303;
 }
 .nav-link-footer {
     font-family: 'Roboto', sans-serif;
@@ -133,4 +145,11 @@
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+.footer-id {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 60px 0;
 }
