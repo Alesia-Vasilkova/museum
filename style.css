@@ -6,47 +6,52 @@
     font-family: "Roboto";
     src: url("assets/fonts/Roboto-Thin.ttf");
 }
-body {
-    width: 1920px;
-    margin: 0 auto;
-}
-.container {
-    max-width: 1920px;
-    margin: 0 auto;
-}
 .container-header {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    list-style: none;
     justify-content: space-between;
     background-color: #030303;
 }
-#logo {
-    width: 199px;
-    height: 33px;
-    top: 59px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .nav-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
     list-style: none;
-    width: 775px;
-    height: 26px;
-    top: 62px;
-    left: 665px;
     gap: 60px;
-    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+}
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
     font-weight: 100;
-}
-.nav-list a {
     color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-#welcome {
-    width: 1920px;
-    height: 810px;
+.nav-link:hover {
+    color: #9d8665;
+}
+.welcome {
     background-color: #030303;
-    font-family: 'Forum';
-    color: white;
+    width: 100%;
+    padding: 60px 0;
+    font-family: 'Forum', serif;
+    color: #fff;
+}
+.welcome-container {
+    max-width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
 }
