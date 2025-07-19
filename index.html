@@ -128,15 +128,30 @@
                   </div>
             </div>
         </section>
-        <section class="section" id="tickets">
-            <div class="title">
-                <h2 class="section-title">Buy Tickets</h2>
-            </div>
+        <section class="section tickets" id="tickets">
+            <h2>Buy Tickets</h2>
+            <form>
+                <fieldset>
+                    <legend>Choose type:</legend>
+                    <label><input type="radio" name="ticket-type" checked/> Adult</label>
+                    <label><input type="radio" name="ticket-type"/> Child</label>
+                    <label><input type="radio" name="ticket-type"/> Senior</label>
+                </fieldset>
+                <label>
+                    Tickets quantity:
+                    <input type="number" name="qty" min="1" value="1"/>
+                </label>
+                <label>
+                    Visitors:
+                    <input type="number" name="visitors" min="1" value="1"/>
+                </label>
+                <button type="submit" class="btn">Buy now</button>
+            </form>
         </section>
-        <section class="section" id="contacts">
-            <div class="title">
-                <h2 class="section-title">Contacts</h2>
-            </div>
+        <section class="section contacts" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <p><a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
+            <p><a href="tel:+33140205050">+33140205050</a></p>
         </section>
     </main>
     <footer class="footer">
@@ -166,15 +181,15 @@
                     </li>
                 </ul>
             </nav>
-            <div class="footer-media">
-                <a href="https://www.youtube.com/user/louvre" class="socialmedia"><img src="assets/img/Youtube.png" alt="YouTube"></a>
-                <a href="https://www.instagram.com/museelouvre/" class="socialmedia"><img src="assets/img/Instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/museedulouvre" class="socialmedia"><img src="assets/img/Facebook.png" alt="Facebook"></a>
-                <a href="http://twitter.com/museelouvre" class="socialmedia"><img src="assets/img/Twitter.png" alt="Twitter"></a>
-                <a href="https://www.pinterest.fr/museedulouvre/" class="socialmedia"><img src="assets/img/Pinterest.png" alt="Pinterest"></a>
-            </div>
+            <ul class="footer-media">
+                <li><a href="https://www.youtube.com/user/louvre" class="socialmedia"><img src="assets/img/Youtube.png" alt="YouTube"></a></li>
+                <li><a href="https://www.instagram.com/museelouvre/" class="socialmedia"><img src="assets/img/Instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/museedulouvre" class="socialmedia"><img src="assets/img/Facebook.png" alt="Facebook"></a></li>
+                <li><a href="http://twitter.com/museelouvre" class="socialmedia"><img src="assets/img/Twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.pinterest.fr/museedulouvre/" class="socialmedia"><img src="assets/img/Pinterest.png" alt="Pinterest"></a></li>
+            </ul>
         </div>
-        <div class="footer-id">
+        <div class="footer-bottom">
             <p> © 2025 </p>
             <p> The Rolling Scopes School </p>
             <a href="https://github.com/Alesia-Vasilkova" class="github nav-link"> alesia-vasilkova </a>

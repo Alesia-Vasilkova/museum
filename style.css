@@ -58,7 +58,6 @@ body {
 }
 #welcome {
     max-width: 1920px;
-    height: 810px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -103,7 +102,6 @@ body {
 }
 #visiting {
     max-width: 1920px;
-    height: 1200px;
     margin: 0 auto;
     padding: 0 60px;
 }
