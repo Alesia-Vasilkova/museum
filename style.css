@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: "Forum";
     src: url("assets/fonts/Forum-Regular.ttf");
@@ -6,20 +13,42 @@
     font-family: "Roboto";
     src: url("assets/fonts/Roboto-Thin.ttf");
 }
-body {
-    margin: 0;
-    padding: 0;
-    min-width: 320px;
-    scroll-behavior: smooth;
-}
-.header-container {
+.header-container,
+.footer-container,
+.welcome-container,
+.cards-group,
+.gallery-grid {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+.section {
+    width: 100%;
+    padding: 60px 0;
+}
+#welcome {
     background-color: #030303;
+    color: #fff;
+}
+h1 {
+    font-family: Forum;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+h2 {
+    font-family: Forum;
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
 }
 .header-logo {
     display: flex;
@@ -44,25 +73,11 @@ body {
 .nav-link:hover {
     color: #9d8665;
 }
-body {
-    width: 1920px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 60px;
-}
 #welcome {
     background-color: #030303;
     font-family: 'Forum', serif;
     color: #fff;
     font-weight: lighter;
-}
-#welcome {
-    max-width: 1920px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
 }
 .welcome-image img{
     background-attachment: fixed;
