@@ -141,6 +141,29 @@ section .content {
   .mini-video video {
     width: calc(33% - 40px);
   }
+  .content-contacts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+  .content-contacts h3 {
+    font-size: 28px;
+  }
+  .content-contacts img {
+    padding: 75px 0;
+  }
+  .content-contacts ul {
+    list-style: none;
+    padding: 0;
+    display:block;
+
+  }
+  .content-contacts li {
+    padding-top: 25px;
+  }
+  .content-contacts a{
+    color: #000000 !important;
+  }
   footer {
     /* width: 1920px; */
     margin: 0 auto;
