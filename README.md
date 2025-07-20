@@ -1,1 +1,1 @@
-https://github.com/Alesia-Vasilkova/museum/
+https://Alesia-Vasilkova.github.io/museum/
