@@ -62,8 +62,8 @@ h2 {
     text-transform: uppercase;
     color: #9D8665;
     margin: 0;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #710707;
+    margin-bottom: 75px;
+    margin-top: 45px;
 }
 #video h2 {
     border-bottom: none;
@@ -80,8 +80,13 @@ section {
 .dark {
   background-color: #030303;
 }
+.dark h2{
+  color: #ffffff;
+}
 .dark p {
-
+  color: #ffffff;
+  font-size: 22px;
+  padding-bottom: 25px;
 }
 section .content {
   width: 1440px;
@@ -134,9 +139,11 @@ section .content {
   }
   .explore-subtitles img {
     size: 720px;
+    margin-top: 60px;
+    margin-bottom: 45px;
   }
-  .text-explore {
-    font-size: 22px;
+  .yellow-text {
+    color: #9D8665;
   }
   .content-video video {
     width: 100%;
@@ -177,9 +184,6 @@ section .content {
   }
   .content-contacts h3 {
     font-size: 28px;
-  }
-  .content-contacts img {
-    padding: 75px 0;
   }
   .content-contacts ul {
     list-style: none;
@@ -242,4 +246,68 @@ section .content {
 }
 .year {
   color: #ffffff;
+}
+.bottom-border {
+  padding-bottom: 25px;
+  border-bottom: 3px solid #710707;
+}
+.parallax {
+  background-image: url("assets/img/parallax.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ticket-info {
+  display: flex;
+  font-size: 22px;
+}
+.ticket-info img, .ticket-info .cart {
+  flex: 50%;
+  min-width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-info .sub {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 25px;
+}
+.ticket-type {
+  padding-left: 60px;
+}
+.ticket-type input {
+  margin-top: 25px;
+}
+.amount {
+  text-align: right;
+}
+.amount label {
+  display: block;
+  text-align: left;
+}
+.amount button {
+  height: 50px;
+  width: 175px;
+  background-color: #000000;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.amount button:hover {
+  cursor: pointer;
+  background-color: #9D8665;
+  color: #000000;
+}
+.total {
+  margin-top: 30px;
 }

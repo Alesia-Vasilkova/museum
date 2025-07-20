@@ -56,7 +56,7 @@
         <section class="section" id="visiting">
             <div class="content">
                 <div class="title">
-                    <h2 class="title-container">Virtual tour</h2>
+                    <h2 class="title-container bottom-border">Virtual tour</h2>
                 </div>
                 <div class="news">
                     <div class="palace-container">
@@ -103,10 +103,10 @@
                 <div class="explore-subtitles">
                     <div class="text-explore">
                         <div class="title">
-                            <h2 class="explore-title">Picture Explore</h2>
+                            <h2 class="explore-title bottom-border">Picture Explore</h2>
                         </div>
                         <p> Las Meninas is a 1656 painting by Diego Velázquez, the leading <br> artist of the Spanish Golden Age. </p>
-                        <p> It was cleaned in 1984 to remove a "yellow veil" of dust that had <br> gathered since the previous restoration in the 19th century. </p>
+                        <p> It was cleaned in 1984 to remove a <span class="yellow-text">"yellow veil"</span> of dust that had <br> gathered since the previous restoration in the 19th century. </p>
                         <p> The cleaning provoked furious protests, not because the picture had <br> been damaged in any way, but because it looked different. </p>
                     </div>
                     <img src="assets/img/after.jpg" alt="after">
@@ -174,14 +174,49 @@
         <section class="section" id="tickets">
             <div class="content">
                 <div class="title">
-                    <h2 class="section-title">Buy Tickets</h2>
+                    <h2 class="section-title bottom-border">Buy Tickets</h2>
+                </div>
+                <div class="ticket-info">
+                    <img src="assets/img/tickets.png" alt="picture">
+                    <div class="cart">
+                        <div class="ticket-type">
+                            <div class="sub">Ticket Type</div>
+                            
+                            <div>
+                                <input type="radio" name="ticket_type" id="type_pe" value="pe" checked>
+                                <label for="type_pe">Permanent exhibition</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ticket_type" id="type_te" value="te">
+                                <label for="type_te">Temporary exhibition</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ticket_type" id="type_ca" value="ca">
+                                <label for="type_ca">Combined Admission</label>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <div class="sub">Amount</div>
+                            <div>
+                                <label for="amount_basic">Basic 18+</label>
+                                <input type="number" name="amount_basic" id="amount_basic" value="1" step="1" min="0"/>
+                            </div>
+                            <div>
+                                <label for="amount_senior">Senior 65+</label>
+                                <input type="number" name="amount_senior" id="amount_senior" value="0" step="1" min="0"/>
+                            </div>
+                            <div class="total sub">Total €<span>220</span></div>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <div class="parallax"></div>
         <section class="section" id="contacts">
             <div class="content">
                 <div class="title">
-                    <h2 class="section-title">Contacts</h2>
+                    <h2 class="section-title bottom-border">Contacts</h2>
                 </div>
                 <div class="content-contacts">
                     <div class="contacts-name">
