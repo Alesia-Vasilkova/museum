@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "Forum";
+    src: url("assets/fonts/Forum-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("assets/fonts/Roboto-Thin.ttf");
+}
+body {
+  margin: 0;
+}
+main {
+    font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    /* width: 1920px; */
+    margin: 0 auto;
+}
+.header-container {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+a:hover {
+  color: #9D8665 !important;
+}
+a:active {
+  color: #7E6C51 !important;
+}
+header a {
+  letter-spacing: 2px;
+  font-family: 'Roboto';
+}
+header .nav-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  list-style: none;
+  font-size: 22px;
+}
+h1 {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 150px;
+}
+h2 {
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #9D8665;
+    margin: 0;
+    margin-bottom: 75px;
+    margin-top: 45px;
+}
+#video h2 {
+    border-bottom: none;
+}
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+section {
+    padding: 30px 0;
+    /* width: 1920px; */
+    margin: 0 auto;
+}
+.dark {
+  background-color: #030303;
+  color: #ffffff;
+}
+
+.dark p {
+  font-size: 22px;
+  padding-bottom: 25px;
+}
+section .content {
+  width: 1440px;
+  margin: 0 auto;
+}
+.btn {
+    font-size: 18px;
+    padding: 16px 40px;
+    background: #710707;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .news div {
+    flex: 25%;
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 30px;
+  }
+  .news div a {
+    text-decoration: none;
+    color: black !important;
+  }
+  .news div h3 {
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #710707;
+    width: fit-content;
+  }
+  .news div img {
+    width: 100%;
+  }
+  .explore-subtitles {
+    display: flex;
+    justify-content: space-between;
+  }
+  .explore-subtitles img {
+    size: 720px;
+    margin-top: 60px;
+    margin-bottom: 45px;
+  }
+  .yellow-text {
+    color: #9D8665;
+  }
+  .content-video video {
+    width: 100%;
+  }
+  #video .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mini-video {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  .mini-video video {
+   flex: 25%;
+   max-width: 31%;
+  }
+  .gallery-grid {
+    width: 100%;
+    display: flex;
+    gap: 36px;
+    height: 1940px;
+    overflow-y: auto;
+  }
+  .gallery-grid .column {
+    flex: 33%;
+    max-width: 33%;
+  }
+  .gallery-grid .column img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .content-contacts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+  }
+  .content-contacts h3 {
+    font-size: 28px;
+  }
+  .content-contacts ul {
+    list-style: none;
+    padding: 0;
+    display:block;
+
+  }
+  .content-contacts li {
+    padding-top: 25px;
+  }
+  .content-contacts a{
+    color: #000000 !important;
+  }
+  footer {
+    /* width: 1920px; */
+    margin: 0 auto;
+    background-color: #030303;
+    font-size: 22px;
+  }
+  .footer-container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #6666
+  }
+  .nav-footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 20px 80px;
+    list-style: none;
+    padding-top: 87px;
+    padding-bottom: 50px;
+  }
+  .nav-footer ul li {
+    width: 50%;
+  }
+  .nav-list-footer {
+    letter-spacing: 2px;
+    font-family: 'Roboto';
+    width: 600px;
+  }
+  .footer-logo {
+    padding-top: 75px;
+  }
+  .social-media {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 55px;
+  }
+.footer-down {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  letter-spacing: 2px;
+  font-family: 'Roboto';
+}
+.year {
+  color: #ffffff;
+}
+.bottom-border {
+  padding-bottom: 25px;
+  border-bottom: 3px solid #710707;
+}
+.parallax {
+  background-image: url("assets/img/parallax.jpg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ticket-info {
+  display: flex;
+  font-size: 22px;
+}
+.ticket-info img, .ticket-info .cart {
+  flex: 50%;
+  min-width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-info .sub {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 25px;
+}
+.ticket-type {
+  padding-left: 60px;
+}
+.ticket-type input {
+  margin-top: 25px;
+}
+.amount {
+  text-align: right;
+}
+.amount label {
+  display: block;
+  text-align: left;
+}
+.amount button {
+  height: 50px;
+  width: 175px;
+  background-color: #000000;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.amount button:hover {
+  cursor: pointer;
+  background-color: #9D8665;
+  color: #000000;
+}
+.total {
+  margin-top: 30px;
+}
+#welcome .content {
+  display: flex;
+}
+.welcome-button {
+  background: #710707;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: #ffffff;
+  width: 360px;
+  height: 75px;
+}
+.welcome-button:hover {
+  background-color: #9D8665;
+  cursor: pointer;
+}
+.welcome-text h3 {
+  margin-bottom: 75px;
+}
