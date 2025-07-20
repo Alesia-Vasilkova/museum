@@ -16,7 +16,6 @@ main {
 header {
     /* width: 1920px; */
     margin: 0 auto;
-    background-color: #030303;
 }
 .header-container {
   width: 1440px;
@@ -81,6 +80,9 @@ section {
 .dark {
   background-color: #030303;
 }
+.dark p {
+
+}
 section .content {
   width: 1440px;
   margin: 0 auto;
@@ -98,9 +100,10 @@ section .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 60px;
   }
   .news div {
-    width: calc(33% - 40px);
+    flex: 25%;
     font-family: Roboto;
     font-weight: 200;
     font-size: 22px;
@@ -125,7 +128,17 @@ section .content {
   .news div img {
     width: 100%;
   }
-  video {
+  .explore-subtitles {
+    display: flex;
+    justify-content: space-between;
+  }
+  .explore-subtitles img {
+    size: 720px;
+  }
+  .text-explore {
+    font-size: 22px;
+  }
+  .content-video video {
     width: 100%;
   }
   #video .title {
@@ -139,7 +152,23 @@ section .content {
     padding-top: 30px;
   }
   .mini-video video {
-    width: calc(33% - 40px);
+   flex: 25%;
+   max-width: 31%;
+  }
+  .gallery-grid {
+    width: 100%;
+    display: flex;
+    gap: 36px;
+    height: 1940px;
+    overflow-y: auto;
+  }
+  .gallery-grid .column {
+    flex: 33%;
+    max-width: 33%;
+  }
+  .gallery-grid .column img {
+    width: 100%;
+    margin-bottom: 24px;
   }
   .content-contacts {
     display: flex;
