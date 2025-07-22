@@ -44,7 +44,7 @@ header a {
 }
 header .nav-list {
   display: flex;
-  gap: 56px;
+  gap: 55px;
   align-items: center;
   list-style: none;
   font-size: 22px;
@@ -83,15 +83,25 @@ section {
     padding-top: 30px;
     /* width: 1920px; */
     margin: 0 auto;
+    padding-bottom: 60px;
+}
+#welcome {
+  padding-bottom: 0px !important;
 }
 .dark {
   background-color: #030303;
   color: #ffffff;
 }
-
+section.dark {
+  padding-bottom: 30px;
+}
+.dark h2 {
+  color: #ffffff;
+}
 .dark p {
   font-size: 22px;
-  padding-bottom: 25px;
+  margin-top: 2px;
+  line-height: 38.5px;
 }
 section .content {
   width: 1440px;
@@ -119,11 +129,16 @@ section .content {
     font-size: 22px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
+  }
+  .news div span {
+    display: block;
+    margin: 12px 0;
   }
   .news div a {
     text-decoration: none;
     color: black !important;
+    font-size: 18px;
   }
   .news div h3 {
     font-family: Forum;
@@ -132,8 +147,16 @@ section .content {
     line-height: 100%;
     letter-spacing: 5px;
     text-transform: uppercase;
-    border-bottom: 1px solid #710707;
     width: fit-content;
+  }
+  hr {
+    color: #710707;
+    background-color: #710707;
+    margin-left: 0;
+    width: 300px;
+    border: none;
+    height: 2px;
+    margin-top: 12px;
   }
   .news div img {
     width: 100%;
@@ -147,25 +170,37 @@ section .content {
     margin-top: 60px;
     margin-bottom: 45px;
   }
+  .txt-exp {
+    font-size: 22px;
+    letter-spacing: 0.17px;
+    color: #fff;
+    display: flex;
+    flex-direction: column
+  }
   .yellow-text {
     color: #9D8665;
   }
   .content-video video {
     width: 100%;
+    height: 735px;
   }
   #video .title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 115px;
   }
   .mini-video {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 35px;
+    gap: 42px;
   }
   .mini-video video {
    flex: 25%;
-   max-width: 31%;
+   max-width: 452px;
+  }
+  #gallery {
+    padding-bottom: 21px;
   }
   .gallery-grid {
     width: 100%;
@@ -178,9 +213,12 @@ section .content {
     flex: 33%;
     max-width: 33%;
   }
+  .gallery-grid .column:nth-child(odd) {
+    padding-top: 50px;
+  }
   .gallery-grid .column img {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   .content-contacts {
     display: flex;
@@ -192,9 +230,8 @@ section .content {
   }
   .content-contacts ul {
     list-style: none;
-    padding: 0;
+    padding: 3px;
     display:block;
-
   }
   .content-contacts li {
     padding-top: 25px;
@@ -277,16 +314,19 @@ section .content {
 .ticket-info .sub {
   font-family: Roboto;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0.2px;
   margin-bottom: 25px;
 }
-.ticket-type {
-  padding-left: 60px;
+.choose {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
 }
-.ticket-type input {
-  margin-top: 25px;
+.ticket-type {
+  padding-left: 57px;
 }
 .amount {
   text-align: right;
@@ -312,6 +352,9 @@ section .content {
   cursor: pointer;
   background-color: #9D8665;
   color: #000000;
+}
+#tickets.section {
+  margin-bottom: 15px;
 }
 .total {
   margin-top: 30px;
@@ -343,13 +386,16 @@ section .content {
   margin-bottom: 75px;
 }
 .welcome-image {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 .vid-text {
   font-family: Roboto;
   font-weight: 300;
   font-size: 22px; 
-  line-height: 2;
+  line-height: 38.5px;
+  margin-bottom: 75px;
+  margin-top: 45px;
+  letter-spacing: 0.12px;
 }
 .carousel-welcome {
   position: absolute;
@@ -357,10 +403,10 @@ section .content {
   bottom: 0;
   width: 450px;
   display: flex;
-  justify-content: space-between;
   background-color: #030303;
   align-items: center;
   padding: 47px 75px;
+  gap: 55px;
 }
 #welcome .content {
   position: relative;
@@ -370,9 +416,7 @@ section .content {
   font-size: 22px;
   text-transform: uppercase;
   color: #fff;
-}
-.carousel-num-item {
-  gap: 10px;
+  gap: 11px;
 }
 .blocks-item {
   display: flex;
@@ -394,13 +438,60 @@ section .content {
 .carousel-arrows {
   display: flex;
   align-items: center;
+  padding-left: 5px;
+  gap: 20px;
 }
 .left-arrow, .right-arrow {
   all: unset;
 }
-.right-arrow {
+.right-arrow svg {
   rotate: 180deg;
 }
 .news h3 {
-  margin: 22px 0;
+  margin-top: 22px;
 }
+.header-logo .name {
+  padding-left: 20px;
+}
+.carousel-controls {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 204px;
+  margin-inline: auto;
+}
+.carousel-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.carousel-controls-dots {
+  display: flex;
+  gap: 20px;
+}
+button.carousel-controls-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #999999;
+  padding: 0px;
+}
+button.carousel-controls-btn:first-child {
+  margin-left: 0px;
+}
+button.carousel-controls-btn.active {
+  background-color: #333333;
+}
+.carousel-controls-right-btn {
+  rotate: 180deg;
+}
+#contacts.section {
+  margin-bottom: 14px;
+}
+#contacts h3 {
+  margin: 0%;
+  letter-spacing: 1px;
+}
+#contacts 
