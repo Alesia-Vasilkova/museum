@@ -255,10 +255,13 @@ section .content {
   .nav-footer ul {
     display: grid;
     grid-template-columns: repeat(2, max-content);
-    gap: 20px 80px;
-    list-style: none;
-    padding-top: 87px;
-    padding-bottom: 50px;
+    gap: 24px;
+    padding-bottom: 35px;
+    column-gap: 166px;
+    padding-left: 0;
+    padding-top: 65px;
+    padding-right: 35px;
+    letter-spacing: 2.5px;
   }
   .nav-footer ul li {
     width: 50%;
@@ -268,13 +271,26 @@ section .content {
     font-family: 'Roboto';
     width: 600px;
   }
+  .soc-link {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #666;
+    display: grid;
+    place-items: center;
+    transition: 0.4s ease-in-out;
+  }
   .footer-logo {
     padding-top: 75px;
   }
   .social-media {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 55px;
+    padding: 0;
+    padding-bottom: 35px;
+  }
+  .social-media li {
+    padding-left: 22px;
   }
 .footer-down {
   width: 1440px;
