@@ -232,15 +232,15 @@
                         <div class="ticket-type">
                             <div class="sub">Ticket Type</div>
                             <div class="choose">
-                                <div class="choose-type1">
+                                <div class="choose-type">
                                     <input type="radio" name="ticket_type" id="type_pe" value="pe" checked>
                                     <label for="type_pe">Permanent exhibition</label>
                                 </div>
-                                <div class="choose-type2">
+                                <div class="choose-type">
                                     <input type="radio" name="ticket_type" id="type_te" value="te">
                                     <label for="type_te">Temporary exhibition</label>
                                 </div>
-                                <div class="choose-type3">
+                                <div class="choose-type">
                                     <input type="radio" name="ticket_type" id="type_ca" value="ca">
                                     <label for="type_ca">Combined Admission</label>
                                 </div>
@@ -250,14 +250,30 @@
                             <div class="sub">Amount</div>
                             <div class="amount-item">
                                 <label for="amount_basic">Basic 18+</label>
-                                <input type="number" name="amount_basic" id="amount_basic" value="1" step="1" min="0">
+                                <div class="number-wrapper">
+                                    <button class="amount-btn amount-minus">
+                                        <span>-</span>
+                                    </button>
+                                    <input type="number" name="amount_basic" id="amount_basic" value="1" step="1" min="0">
+                                    <button class="amount-btn amount-plus">
+                                        <span>+</span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="amount-item">
                                 <label for="amount_senior">Senior 65+</label>
-                                <input type="number" name="amount_senior" id="amount_senior" value="0" step="1" min="0">
+                                <div class="number-wrapper">
+                                    <button class="amount-btn amount-minus">
+                                        <span>-</span>
+                                    </button>
+                                    <input type="number" name="amount_senior" id="amount_senior" value="1" step="1" min="0">
+                                    <button class="amount-btn amount-plus">
+                                        <span>+</span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="total sub">Total €<span>220</span></div>
-                            <button>Buy now</button>
+                            <button class="buy-now">Buy now</button>
                         </div>
                     </div>
                 </div>
@@ -291,7 +307,7 @@
         <div class="footer-container">
             <div class="footer-logo">
                 <img src="assets/img/Frame.png" alt="logo icon">
-                <img src="assets/img/Louvre.png" alt="logo text">
+                <img src="assets/img/Louvre.png" class="text-logo" alt="logo text">
             </div>
             <nav class="nav-footer">
                 <ul class="nav-list-footer">
